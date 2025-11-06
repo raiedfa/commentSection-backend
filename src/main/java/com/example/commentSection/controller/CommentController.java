@@ -13,7 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping ("/comments")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://commentsection-frontend-1.onrender.com")
+
 public class CommentController {
 
     @Autowired
