@@ -19,7 +19,8 @@ RUN ./mvnw dependency:go-offline -B
 COPY src ./src
 
 # Build the project (skip tests for faster build)
-RUN ./mvnw package -DskipTests -B
+RUN ./mvnw package -Dmaven.test.skip=true -B
+
 
 # Expose the port your Spring Boot app runs on
 EXPOSE 9000
